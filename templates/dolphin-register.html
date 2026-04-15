@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 20px; }
+    .container { max-width: 400px; margin: auto; }
+    .paper { padding: 24px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; }
+    .center { text-align: center; margin-bottom: 24px; }
+    .icon { font-size: 40px; color: #1976d2; }
+    .title { font-size: 2rem; margin: 16px 0 8px; }
+    .subtitle { color: #666; }
+    .form { margin-top: 16px; }
+    .input { margin: 8px 0; width: 100%; padding: 8px; box-sizing: border-box; }
+    .button { width: 100%; padding: 12px; background: #1976d2; color: white; border: none; border-radius: 4px; cursor: pointer; margin: 8px 0; }
+    .checkbox { margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="paper">
+      <div class="center">
+        <span class="material-icons icon">person_add</span>
+        <h1 class="title">Create Account</h1>
+        <p class="subtitle">Sign up to get started</p>
+      </div>
+      <form class="form">
+        <input class="input" type="text" placeholder="Full Name" required />
+        <input class="input" type="email" placeholder="Email Address" required />
+        <input class="input" type="password" placeholder="Password" required />
+        <input class="input" type="password" placeholder="Confirm Password" required />
+        <div class="checkbox">
+          <input type="checkbox" id="terms" />
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </div>
+        <button class="button" type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div style="text-align: center; margin-top: 16px;">
+      <p style="color: #666;">Already have an account? <a href="#">Sign in</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "build": "node scripts/fetch-templates.js && vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "@mui/x-data-grid": "^9.0.1",
     "@tailwindcss/vite": "^4.2.2",
     "@vitejs/plugin-react": "^6.0.1",
+    "axios": "^1.15.0",
     "dolphin-css-cli": "file:../dolphincli",
     "dolphincss": "^1.2.6",
     "react": "^19.2.5",
