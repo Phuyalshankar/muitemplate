@@ -6,7 +6,7 @@ async function fetchTemplates() {
   const appPath = path.join(__dirname, '../src/App.jsx');
   let content = fs.readFileSync(appPath, 'utf8');
 
-  const markerRegex = /<div className="d-([^"]+)"><\/div>/g;
+  const markerRegex = /<div className="d-([^"]+)">[\s\S]*?<\/div>/g;
   const matches = [...content.matchAll(markerRegex)];
 
   for (const match of matches) {
